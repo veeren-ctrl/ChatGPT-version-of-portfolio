@@ -1,1 +1,1448 @@
+/* ==========================================
+   LAXMI JUTE HOUSE
+   PREMIUM CORPORATE WEBSITE
+   VERSION 1.0
+==========================================*/
 
+/*==========================
+RESET
+==========================*/
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Manrope',sans-serif;
+
+    background:#0f1115;
+
+    color:#f4f4f4;
+
+    overflow-x:hidden;
+
+    line-height:1.7;
+
+}
+
+img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+
+/*==========================
+DESIGN SYSTEM
+==========================*/
+
+:root{
+
+    --bg:#0f1115;
+
+    --bg-light:#181b20;
+
+    --card:#20242b;
+
+    --gold:#d8b36a;
+
+    --gold-light:#f3d28d;
+
+    --white:#ffffff;
+
+    --text:#d4d4d4;
+
+    --border:#2d3138;
+
+    --shadow:0 20px 60px rgba(0,0,0,.35);
+
+    --radius:18px;
+
+    --transition:.35s ease;
+
+    --container:1280px;
+
+}
+
+
+/*==========================
+TYPOGRAPHY
+==========================*/
+
+h1,
+h2,
+h3,
+h4{
+
+    color:white;
+
+    font-weight:700;
+
+    line-height:1.2;
+
+}
+
+h1{
+
+    font-size:4.5rem;
+
+    font-family:'Cormorant Garamond',serif;
+
+}
+
+h2{
+
+    font-size:3rem;
+
+}
+
+h3{
+
+    font-size:1.4rem;
+
+}
+
+p{
+
+    color:var(--text);
+
+    font-size:1.05rem;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:80px;
+
+}
+
+.section-title span{
+
+    color:var(--gold);
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    font-size:.9rem;
+
+    font-weight:700;
+
+}
+
+.section-title h2{
+
+    margin:20px 0;
+
+}
+
+
+/*==========================
+LAYOUT
+==========================*/
+
+.container{
+
+    width:min(92%,var(--container));
+
+    margin:auto;
+
+}
+
+section{
+
+    padding:110px 0;
+
+}
+
+
+/*==========================
+HEADER
+==========================*/
+
+.header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    z-index:999;
+
+    background:rgba(15,17,21,.92);
+
+    backdrop-filter:blur(12px);
+
+    border-bottom:1px solid rgba(255,255,255,.05);
+
+}
+
+.header .container{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    height:90px;
+
+}
+
+.logo{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.logo span{
+
+    color:white;
+
+    font-size:1.6rem;
+
+    letter-spacing:3px;
+
+    font-weight:800;
+
+}
+
+.logo small{
+
+    color:var(--gold);
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+}
+
+.nav-menu{
+
+    display:flex;
+
+    gap:45px;
+
+}
+
+.nav-menu a{
+
+    color:#ddd;
+
+    transition:var(--transition);
+
+    font-weight:600;
+
+}
+
+.nav-menu a:hover{
+
+    color:var(--gold);
+
+}
+
+
+/*==========================
+BUTTONS
+==========================*/
+
+.btn-primary{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:15px 34px;
+
+    background:var(--gold);
+
+    color:#111;
+
+    border-radius:50px;
+
+    font-weight:700;
+
+    transition:var(--transition);
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 35px rgba(216,179,106,.35);
+
+}
+
+.btn-secondary{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:15px 34px;
+
+    border:1px solid var(--gold);
+
+    border-radius:50px;
+
+    color:white;
+
+    transition:var(--transition);
+
+}
+
+.btn-secondary:hover{
+
+    background:var(--gold);
+
+    color:#111;
+
+}
+
+
+/*==========================
+HERO
+==========================*/
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    padding-top:120px;
+
+}
+
+.hero-grid{
+
+    display:grid;
+
+    grid-template-columns:1.2fr 1fr;
+
+    align-items:center;
+
+    gap:80px;
+
+}
+
+.hero-tag{
+
+    display:inline-block;
+
+    margin-bottom:25px;
+
+    color:var(--gold);
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    font-size:.9rem;
+
+    font-weight:700;
+
+}
+
+.hero h1{
+
+    margin-bottom:30px;
+
+}
+
+.hero p{
+
+    max-width:640px;
+
+    margin-bottom:45px;
+
+    font-size:1.15rem;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+}
+
+.hero-image{
+
+    position:relative;
+
+}
+
+.hero-image img{
+
+    border-radius:30px;
+
+    box-shadow:var(--shadow);
+
+}
+
+
+/*==========================
+METRICS
+==========================*/
+
+.metrics{
+
+    background:var(--bg-light);
+
+}
+
+.metrics .container{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+.metric{
+
+    text-align:center;
+
+    background:var(--card);
+
+    padding:40px;
+
+    border-radius:var(--radius);
+
+    transition:var(--transition);
+
+}
+
+.metric:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.metric h2{
+
+    color:var(--gold);
+
+    margin-bottom:10px;
+
+    font-size:3rem;
+
+}
+
+.metric p{
+
+    color:#ccc;
+
+}
+/*=========================================
+SOLUTIONS
+=========================================*/
+
+#solutions{
+
+    background:#13161b;
+
+}
+
+.solution-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+}
+
+.solution-grid article{
+
+    background:var(--card);
+
+    padding:45px;
+
+    border-radius:var(--radius);
+
+    border:1px solid transparent;
+
+    transition:var(--transition);
+
+}
+
+.solution-grid article:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--gold);
+
+    box-shadow:var(--shadow);
+
+}
+
+.solution-grid h3{
+
+    margin-bottom:20px;
+
+    color:var(--gold);
+
+}
+
+.solution-grid p{
+
+    color:var(--text);
+
+}
+
+
+/*=========================================
+CLIENTS
+=========================================*/
+
+.clients{
+
+    background:var(--bg);
+
+}
+
+.client-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+}
+
+.client-card{
+
+    background:var(--card);
+
+    padding:40px;
+
+    border-radius:var(--radius);
+
+    transition:var(--transition);
+
+    border:1px solid var(--border);
+
+}
+
+.client-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--gold);
+
+}
+
+.client-card h3{
+
+    margin-bottom:25px;
+
+    color:var(--gold);
+
+}
+
+.client-card ul{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+.client-card li{
+
+    color:#d7d7d7;
+
+    position:relative;
+
+    padding-left:18px;
+
+}
+
+.client-card li::before{
+
+    content:"•";
+
+    color:var(--gold);
+
+    position:absolute;
+
+    left:0;
+
+}
+
+
+/*=========================================
+ABOUT
+=========================================*/
+
+.about{
+
+    background:var(--bg-light);
+
+}
+
+.about-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+.about-content h2{
+
+    margin:20px 0 30px;
+
+}
+
+.about-content p{
+
+    margin-bottom:25px;
+
+}
+
+.section-tag{
+
+    color:var(--gold);
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    font-weight:700;
+
+}
+
+.about-image img{
+
+    border-radius:30px;
+
+    box-shadow:var(--shadow);
+
+}
+
+
+/*=========================================
+WHY US
+=========================================*/
+
+.why-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+}
+
+.why-card{
+
+    background:var(--card);
+
+    padding:40px;
+
+    border-radius:var(--radius);
+
+    border:1px solid var(--border);
+
+    transition:var(--transition);
+
+}
+
+.why-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--gold);
+
+}
+
+.why-card h3{
+
+    color:var(--gold);
+
+    margin-bottom:20px;
+
+}
+
+.why-card p{
+
+    color:#d6d6d6;
+
+}
+
+
+/*=========================================
+INDUSTRIES
+=========================================*/
+
+.industries{
+
+    background:#13161b;
+
+}
+
+.industry-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:25px;
+
+}
+
+.industry-card{
+
+    background:var(--card);
+
+    padding:35px 20px;
+
+    border-radius:16px;
+
+    text-align:center;
+
+    transition:var(--transition);
+
+    border:1px solid var(--border);
+
+}
+
+.industry-card:hover{
+
+    background:var(--gold);
+
+    color:#111;
+
+    transform:translateY(-8px);
+
+}
+
+.industry-card:hover h3{
+
+    color:#111;
+
+}
+
+.industry-card h3{
+
+    font-size:1rem;
+
+}
+
+
+/*=========================================
+PRODUCTS
+=========================================*/
+
+.products{
+
+    background:var(--bg);
+
+}
+
+.product-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+}
+
+.product-card{
+
+    overflow:hidden;
+
+    background:var(--card);
+
+    border-radius:24px;
+
+    transition:var(--transition);
+
+}
+
+.product-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:var(--shadow);
+
+}
+
+.product-card img{
+
+    height:280px;
+
+    object-fit:cover;
+
+}
+
+.product-card h3{
+
+    padding:28px;
+
+    text-align:center;
+
+}
+
+
+/*=========================================
+PROCESS
+=========================================*/
+
+.process{
+
+    background:var(--bg-light);
+
+}
+
+.process-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(6,1fr);
+
+    gap:25px;
+
+}
+
+.process-step{
+
+    background:var(--card);
+
+    padding:35px 20px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    transition:var(--transition);
+
+}
+
+.process-step:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.process-step span{
+
+    display:inline-flex;
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    background:var(--gold);
+
+    color:#111;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+}
+
+.process-step h3{
+
+    font-size:1rem;
+
+}
+
+
+/*=========================================
+FOUNDER
+=========================================*/
+
+.founder{
+
+    background:var(--bg);
+
+}
+
+.founder-grid{
+
+    display:grid;
+
+    grid-template-columns:420px 1fr;
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+.founder-image img{
+
+    border-radius:30px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.founder-content span{
+
+    color:var(--gold);
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+}
+
+.founder-content h2{
+
+    margin:20px 0 10px;
+
+}
+
+.founder-content h4{
+
+    color:#d9d9d9;
+
+    margin-bottom:30px;
+
+    font-weight:500;
+
+}
+
+.founder-content p{
+
+    margin-bottom:22px;
+
+}
+
+
+/*=========================================
+CTA
+=========================================*/
+
+.cta{
+
+    background:#14171c;
+
+}
+
+.cta-box{
+
+    background:linear-gradient(135deg,#1d2129,#111318);
+
+    padding:80px;
+
+    border-radius:30px;
+
+    text-align:center;
+
+}
+
+.cta-box span{
+
+    color:var(--gold);
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+}
+
+.cta-box h2{
+
+    margin:25px auto;
+
+    max-width:900px;
+
+}
+
+.cta-box p{
+
+    max-width:700px;
+
+    margin:0 auto 45px;
+
+}
+
+.cta-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+
+/*=========================================
+CONTACT
+=========================================*/
+
+.contact{
+
+    background:var(--bg);
+
+}
+
+.contact-box{
+
+    max-width:800px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.contact-box p{
+
+    margin-bottom:40px;
+
+}
+
+
+/*=========================================
+FOOTER
+=========================================*/
+
+.footer{
+
+    background:#090a0c;
+
+    padding:80px 0 30px;
+
+    border-top:1px solid rgba(255,255,255,.05);
+
+}
+
+.footer-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr 1.2fr;
+
+    gap:60px;
+
+}
+
+.footer-column h3{
+
+    color:var(--gold);
+
+    margin-bottom:20px;
+
+}
+
+.footer-column h4{
+
+    margin-bottom:20px;
+
+}
+
+.footer-column ul{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+}
+
+.footer-column li{
+
+    color:#bcbcbc;
+
+}
+
+.footer-column a{
+
+    transition:var(--transition);
+
+}
+
+.footer-column a:hover{
+
+    color:var(--gold);
+
+}
+
+.footer-bottom{
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    margin-top:60px;
+
+    padding-top:25px;
+
+    text-align:center;
+
+}
+/*=========================================
+UTILITY CLASSES
+=========================================*/
+
+.text-center{
+    text-align:center;
+}
+
+.mt-1{margin-top:10px;}
+.mt-2{margin-top:20px;}
+.mt-3{margin-top:30px;}
+.mt-4{margin-top:40px;}
+.mt-5{margin-top:60px;}
+
+.mb-1{margin-bottom:10px;}
+.mb-2{margin-bottom:20px;}
+.mb-3{margin-bottom:30px;}
+.mb-4{margin-bottom:40px;}
+.mb-5{margin-bottom:60px;}
+
+
+/*=========================================
+SECTION DIVIDERS
+=========================================*/
+
+section{
+
+    position:relative;
+
+}
+
+section::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:0;
+
+    left:50%;
+
+    width:90%;
+
+    height:1px;
+
+    transform:translateX(-50%);
+
+    background:rgba(255,255,255,.04);
+
+}
+
+
+/*=========================================
+SCROLLBAR
+=========================================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--gold);
+
+    border-radius:20px;
+
+}
+
+
+/*=========================================
+IMAGE EFFECTS
+=========================================*/
+
+img{
+
+    transition:var(--transition);
+
+}
+
+.product-card:hover img{
+
+    transform:scale(1.06);
+
+}
+
+.about-image{
+
+    overflow:hidden;
+
+    border-radius:30px;
+
+}
+
+.about-image:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.founder-image{
+
+    overflow:hidden;
+
+    border-radius:30px;
+
+}
+
+.founder-image:hover img{
+
+    transform:scale(1.05);
+
+}
+
+
+/*=========================================
+LINK ANIMATION
+=========================================*/
+
+.nav-menu a{
+
+    position:relative;
+
+}
+
+.nav-menu a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--gold);
+
+    transition:.35s;
+
+}
+
+.nav-menu a:hover::after{
+
+    width:100%;
+
+}
+
+
+/*=========================================
+CARD EFFECT
+=========================================*/
+
+.solution-grid article,
+.client-card,
+.why-card,
+.product-card,
+.metric,
+.process-step,
+.industry-card{
+
+    transition:.35s ease;
+
+}
+
+.solution-grid article:hover,
+.client-card:hover,
+.why-card:hover,
+.product-card:hover,
+.metric:hover,
+.process-step:hover{
+
+    box-shadow:0 25px 60px rgba(0,0,0,.35);
+
+}
+
+
+/*=========================================
+BUTTON EFFECTS
+=========================================*/
+
+.btn-primary,
+.btn-secondary{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.btn-primary::before,
+.btn-secondary::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:120%;
+
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.25),
+        transparent
+    );
+
+    transition:.7s;
+
+}
+
+.btn-primary:hover::before,
+.btn-secondary:hover::before{
+
+    left:120%;
+
+}
+
+
+/*=========================================
+SELECTION
+=========================================*/
+
+::selection{
+
+    background:var(--gold);
+
+    color:#111;
+
+}
+
+
+/*=========================================
+FOCUS
+=========================================*/
+
+button:focus,
+a:focus{
+
+    outline:2px solid var(--gold);
+
+    outline-offset:4px;
+
+}
+
+
+/*=========================================
+LOADING TRANSITION
+=========================================*/
+
+body{
+
+    animation:fadeIn .8s ease;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+
+/*=========================================
+SMOOTH HOVER
+=========================================*/
+
+.hero-image img,
+.about-image img,
+.founder-image img{
+
+    will-change:transform;
+
+}
+
+
+/*=========================================
+END OF STYLE.CSS
+=========================================*/
