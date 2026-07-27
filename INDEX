@@ -1,1550 +1,1020 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <title>Virendrra Randive – Advisor & Entrepreneur</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta
-    name="description"
-    content="Portfolio of Virendrra Randive – advisor and founder at Laxmi Jute House, helping businesses with sustainable gifting and growth."
-  />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Laxmi Jute House - Premium Corporate Gifting & Sustainable Procurement Solutions.">
 
-  <!-- Open Graph / social share preview -->
-  <meta property="og:title" content="Virendrra Randive – Advisor & Entrepreneur" />
-  <meta property="og:description" content="Advisor and founder at Laxmi Jute House, helping businesses with sustainable corporate gifting and growth strategy." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://virendra-portfolio592.netlify.app/" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Virendrra Randive – Advisor & Entrepreneur" />
-  <meta name="twitter:description" content="Advisor and founder at Laxmi Jute House, helping businesses with sustainable corporate gifting and growth strategy." />
+    <title>Laxmi Jute House | Premium Corporate Gifting</title>
 
-  <!-- Premium Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <!-- Simple favicon -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%23d4af37'/%3E%3Ctext x='16' y='22' font-size='16' font-family='system-ui,sans-serif' font-weight='700' fill='%230a0a0a' text-anchor='middle'%3EV%3C/text%3E%3C/svg%3E" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Cormorant+Garamond:wght@600;700&display=swap"
+        rel="stylesheet">
 
-  <style>
-    :root {
-      /* High-End Midnight & Gold Palette */
-      --bg: #0a0a0a;
-      --bg-alt: #121212;
-      --accent: #d4af37;
-      --accent-soft: rgba(212, 175, 55, 0.1);
-      --text: #f0f0f0;
-      --muted: #9ca3af;
-      --card: #151515;
-      --border: rgba(255, 255, 255, 0.08);
-      --radius-xl: 18px;
-      --shadow-soft: 0 22px 40px rgba(0, 0, 0, 0.4);
-    }
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      -webkit-font-smoothing: antialiased;
-      line-height: 1.6;
-    }
-
-    h1, h2, h3, .brand-text span:first-child, .hero-title {
-      font-family: 'Playfair Display', serif;
-      letter-spacing: -0.01em;
-      font-weight: 500;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
-    .page {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .container {
-      width: 100%;
-      max-width: 1120px;
-      margin: 0 auto;
-      padding: 0 1.5rem;
-    }
-
-    /* Scroll Animations */
-    .reveal {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: all 0.9s cubic-bezier(0.5, 0, 0, 1);
-    }
-    .reveal.active {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    /* SVG Icons */
-    svg.icon {
-      width: 20px;
-      height: 20px;
-      stroke: currentColor;
-      stroke-width: 1.5;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-      fill: none;
-    }
-
-    /* Nav */
-    .nav {
-      position: sticky;
-      top: 0;
-      z-index: 40;
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      background: rgba(10, 10, 10, 0.85);
-      border-bottom: 1px solid var(--border);
-    }
-
-    .nav-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 1rem 0;
-      gap: 1.5rem;
-    }
-
-    .nav-brand {
-      display: flex;
-      align-items: center;
-      gap: 0.8rem;
-    }
-
-    .brand-logo {
-      width: 36px;
-      height: 36px;
-      border-radius: 999px;
-      background: linear-gradient(135deg, #d4af37, #b8972e);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.1rem;
-      font-family: 'Playfair Display', serif;
-      font-weight: 600;
-      color: #0a0a0a;
-    }
-
-    .brand-text {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .brand-text span:first-child {
-      font-size: 1.1rem;
-    }
-
-    .brand-text span:last-child {
-      font-size: 0.75rem;
-      color: var(--muted);
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 1.5rem;
-      font-size: 0.9rem;
-    }
-
-    .nav-links a {
-      padding: 0.4rem 0.6rem;
-      color: var(--muted);
-      transition: color 0.3s ease;
-    }
-
-    .nav-links a:hover {
-      color: var(--accent);
-    }
-
-    .nav-cta {
-      padding: 0.6rem 1.2rem;
-      border-radius: 999px;
-      font-size: 0.85rem;
-      border: 1px solid var(--accent);
-      background: transparent;
-      color: var(--accent);
-      font-weight: 500;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      white-space: nowrap;
-    }
-
-    .nav-cta:hover {
-      background: var(--accent);
-      color: #0a0a0a;
-    }
-
-    .nav-toggle {
-      display: none;
-      border: none;
-      background: transparent;
-      color: var(--text);
-      cursor: pointer;
-    }
-
-    .nav-toggle svg {
-      width: 24px;
-      height: 24px;
-    }
-
-    main {
-      flex: 1;
-    }
-
-    /* Hero */
-    .hero {
-      padding: 6rem 0 4rem;
-      background: radial-gradient(circle at top, #151515 0, #0a0a0a 60%);
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.1fr);
-      gap: 4rem;
-      align-items: center;
-    }
-
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.35rem 0.9rem;
-      border-radius: 999px;
-      font-size: 0.75rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--accent);
-      background: var(--accent-soft);
-      border: 1px solid rgba(212, 175, 55, 0.3);
-    }
-
-    .eyebrow-dot {
-      width: 6px;
-      height: 6px;
-      border-radius: 999px;
-      background: var(--accent);
-    }
-
-    .hero-title {
-      margin: 1.2rem 0 1rem;
-      font-size: clamp(2.5rem, 4.5vw, 3.8rem);
-      line-height: 1.15;
-    }
-
-    .hero-title span.highlight {
-      color: var(--accent);
-      font-style: italic;
-    }
-
-    .hero-subtitle {
-      font-size: 1.05rem;
-      line-height: 1.7;
-      max-width: 36rem;
-      color: var(--muted);
-    }
-
-    .hero-subtitle strong {
-      color: #fff;
-      font-weight: 500;
-    }
-
-    .metrics {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-      margin: 2rem 0 1rem;
-    }
-
-    .metric {
-      padding: 1rem 1.2rem;
-      border-radius: 12px;
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid var(--border);
-      min-width: 150px;
-    }
-
-    .metric strong {
-      display: block;
-      font-size: 1.4rem;
-      font-family: 'Playfair Display', serif;
-      color: var(--accent);
-    }
-
-    .metric span {
-      font-size: 0.8rem;
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      margin-top: 2rem;
-      align-items: center;
-    }
-
-    .btn {
-      border-radius: 999px;
-      padding: 0.85rem 1.6rem;
-      font-size: 0.95rem;
-      border: 1px solid transparent;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.6rem;
-      font-weight: 500;
-      transition: all 0.3s ease;
-    }
-
-    .btn-primary {
-      background: var(--accent);
-      color: #0a0a0a;
-      box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2);
-    }
-
-    .btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 15px 25px rgba(212, 175, 55, 0.3);
-      background: #e5c358;
-    }
-
-    .btn-outline {
-      background: transparent;
-      color: var(--text);
-      border-color: rgba(255, 255, 255, 0.2);
-    }
-
-    .btn-outline:hover {
-      border-color: var(--accent);
-      color: var(--accent);
-    }
-
-    .hero-note {
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-      margin-top: 1.2rem;
-      font-size: 0.85rem;
-      color: var(--muted);
-    }
-
-    .hero-visual {
-      position: relative;
-    }
-
-    .hero-card {
-      position: relative;
-      border-radius: 20px;
-      padding: 2rem;
-      background: linear-gradient(145deg, #181818, #0a0a0a);
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow-soft);
-      overflow: hidden;
-      min-height: 300px;
-    }
-
-    .hero-avatar {
-      width: 80px;
-      height: 80px;
-      border-radius: 999px;
-      background: linear-gradient(135deg, #d4af37, #b8972e);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 2.2rem;
-      font-family: 'Playfair Display', serif;
-      color: #0a0a0a;
-      margin-bottom: 1.2rem;
-    }
-
-    .hero-card h2 {
-      margin: 0 0 0.5rem;
-      font-size: 1.4rem;
-      color: #fff;
-    }
-
-    .hero-card p {
-      margin: 0;
-      font-size: 0.95rem;
-      color: var(--muted);
-      line-height: 1.6;
-    }
-
-    .hero-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.6rem;
-      margin-top: 1.5rem;
-      font-size: 0.8rem;
-    }
-
-    .tag {
-      padding: 0.4rem 0.8rem;
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      color: #d1d5db;
-    }
-
-    .hero-floating-card {
-      position: absolute;
-      right: -15px;
-      bottom: -15px;
-      padding: 1.2rem;
-      border-radius: 16px;
-      background: rgba(18, 18, 18, 0.95);
-      backdrop-filter: blur(10px);
-      border: 1px solid var(--border);
-      box-shadow: 0 15px 35px rgba(0,0,0,0.6);
-      font-size: 0.85rem;
-      max-width: 220px;
-    }
-
-    .hero-floating-card strong {
-      display: block;
-      font-size: 0.95rem;
-      margin-bottom: 0.4rem;
-      color: var(--accent);
-      font-family: 'Playfair Display', serif;
-    }
-
-    .hero-floating-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      padding: 0.3rem 0.7rem;
-      border-radius: 999px;
-      background: var(--accent-soft);
-      border: 1px solid rgba(212, 175, 55, 0.3);
-      color: var(--accent);
-      font-size: 0.75rem;
-      margin-top: 0.8rem;
-    }
-
-    /* Sections */
-    section {
-      padding: 5rem 0;
-    }
-
-    section:nth-of-type(even) {
-      background: var(--bg-alt);
-    }
-
-    .section-header {
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-      margin-bottom: 3rem;
-      align-items: center;
-      text-align: center;
-    }
-
-    .section-kicker {
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      color: var(--accent);
-    }
-
-    .section-title {
-      font-size: 2.2rem;
-      margin: 0;
-    }
-
-    .section-description {
-      font-size: 1rem;
-      color: var(--muted);
-      max-width: 38rem;
-      margin: 0.5rem auto 0;
-    }
-
-    /* About */
-    .about-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
-      gap: 4rem;
-      align-items: center;
-    }
-
-    .about-text p {
-      margin: 0 0 1.2rem;
-      font-size: 1.05rem;
-      color: #e5e7eb;
-    }
-
-    .about-text p span.muted {
-      color: var(--muted);
-    }
-
-    .about-list {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 1rem;
-      font-size: 0.9rem;
-    }
-
-    .about-item {
-      padding: 1.2rem;
-      border-radius: 12px;
-      border: 1px solid var(--border);
-      background: rgba(255, 255, 255, 0.02);
-    }
-
-    .about-item span.label {
-      display: block;
-      font-size: 0.75rem;
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      margin-bottom: 0.3rem;
-    }
-
-    .about-item span.value {
-      font-weight: 500;
-      color: #fff;
-    }
-
-    .stack-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.6rem;
-      margin-top: 1rem;
-      font-size: 0.85rem;
-    }
-
-    .stack-tags span {
-      padding: 0.4rem 0.8rem;
-      border-radius: 999px;
-      background: transparent;
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      color: var(--muted);
-    }
-
-    /* Services */
-    .cards-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 2rem;
-    }
-
-    .card {
-      background: var(--card);
-      border-radius: var(--radius-xl);
-      border: 1px solid var(--border);
-      padding: 2.5rem 2rem;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-      transition: transform 0.4s ease, border-color 0.4s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      border-color: rgba(212, 175, 55, 0.4);
-    }
-
-    .card-icon {
-      width: 48px;
-      height: 48px;
-      border-radius: 12px;
-      background: var(--accent-soft);
-      color: var(--accent);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 1.5rem;
-    }
-
-    .card h3 {
-      margin: 0 0 1rem;
-      font-size: 1.3rem;
-    }
-
-    .card p {
-      margin: 0 0 1.5rem;
-      font-size: 0.95rem;
-      color: var(--muted);
-    }
-
-    .card ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      font-size: 0.9rem;
-      color: #e5e7eb;
-    }
-
-    .card ul li {
-      display: flex;
-      align-items: flex-start;
-      gap: 0.5rem;
-      margin-bottom: 0.6rem;
-    }
-
-    .card ul li::before {
-      content: "—";
-      color: var(--accent);
-    }
-
-    /* Highlight / Work */
-    .highlight {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-      gap: 4rem;
-      align-items: flex-start;
-    }
-
-    .highlight h3 {
-      margin: 0 0 1rem;
-      font-size: 1.8rem;
-    }
-
-    .highlight p {
-      font-size: 1.05rem;
-      color: var(--muted);
-      margin-bottom: 2rem;
-    }
-
-    .product-strip {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 1rem;
-      margin-top: 2rem;
-    }
-
-    .product-chip {
-      border-radius: 12px;
-      border: 1px solid var(--border);
-      background: rgba(255, 255, 255, 0.02);
-      padding: 0.5rem;
-      text-align: center;
-      transition: all 0.3s ease;
-    }
-
-    .product-chip:hover {
-      border-color: var(--accent);
-      background: rgba(212, 175, 55, 0.05);
-    }
-
-    .product-chip img {
-      width: 100%;
-      height: 90px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 0.5rem;
-    }
-
-    .product-chip .label {
-      font-size: 0.75rem;
-      color: var(--muted);
-      display: block;
-      padding-bottom: 0.2rem;
-    }
-
-    .highlight-card {
-      border-radius: 20px;
-      padding: 2.5rem;
-      background: var(--card);
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow-soft);
-    }
-
-    .highlight-card-header {
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 1.5rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .highlight-card-title {
-      font-size: 1.2rem;
-      font-family: 'Playfair Display', serif;
-      color: #fff;
-      margin-bottom: 0.5rem;
-    }
-
-    .highlight-card-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .highlight-card-list li {
-      margin-bottom: 1rem;
-      font-size: 0.9rem;
-      color: #e5e7eb;
-    }
-
-    .highlight-card-list span.label {
-      display: block;
-      color: var(--accent);
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      margin-bottom: 0.2rem;
-    }
-
-    /* Clients: featured badges */
-    .client-featured-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 0.9rem;
-      margin: 1.5rem 0 0;
-    }
-
-    .client-featured-chip {
-      padding: 0.9rem 0.7rem;
-      border-radius: 12px;
-      background: linear-gradient(135deg, rgba(212, 175, 55, 0.22), rgba(212, 175, 55, 0.06));
-      border: 1.5px solid rgba(212, 175, 55, 0.55);
-      font-size: 0.82rem;
-      font-weight: 600;
-      text-align: center;
-      color: #f3d876;
-      box-shadow: 0 8px 18px rgba(212, 175, 55, 0.08);
-    }
-
-    /* Clients: grouped list by industry */
-    .client-groups-wrap {
-      background: var(--card);
-      border-radius: var(--radius-xl);
-      border: 1px solid var(--border);
-      padding: 2.5rem;
-      box-shadow: var(--shadow-soft);
-      margin-top: 3rem;
-    }
-
-    .client-groups-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 2rem 3rem;
-      margin-top: 1.8rem;
-    }
-
-    .client-group {
-      margin-top: 0;
-    }
-
-    .client-group-title {
-      font-size: 0.72rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--accent);
-      margin-bottom: 0.6rem;
-      font-weight: 600;
-    }
-
-    .clients-list {
-      margin: 0;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 0.4rem;
-      font-size: 0.88rem;
-      color: #d1d5db;
-      padding: 0;
-      list-style: none;
-    }
-
-    .clients-list li {
-      position: relative;
-      padding-left: 1rem;
-    }
-
-    .clients-list li::before {
-      content: "◆";
-      position: absolute;
-      left: 0;
-      top: 0.2rem;
-      font-size: 0.5rem;
-      color: var(--accent);
-    }
-
-    .clients-note {
-      font-size: 0.82rem;
-      color: var(--muted);
-      margin-top: 2rem;
-      padding-top: 1.6rem;
-      border-top: 1px solid var(--border);
-      grid-column: 1 / -1;
-    }
-
-    /* Testimonials */
-    .testimonials-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 2rem;
-    }
-
-    .testimonial {
-      border-radius: 16px;
-      border: 1px solid var(--border);
-      background: var(--card);
-      padding: 2rem;
-    }
-
-    .testimonial-quote {
-      color: #e5e7eb;
-      font-size: 0.95rem;
-      font-style: italic;
-      margin-bottom: 1.5rem;
-    }
-
-    .testimonial-footer {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .testimonial-name {
-      font-weight: 500;
-      color: #fff;
-      font-size: 0.9rem;
-    }
-
-    .testimonial-role {
-      color: var(--muted);
-      font-size: 0.8rem;
-    }
-
-    /* Contact */
-    .contact-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
-      gap: 4rem;
-    }
-
-    .contact-card {
-      border-radius: 20px;
-      padding: 2.5rem;
-      background: var(--card);
-      border: 1px solid var(--border);
-    }
-
-    .contact-card h3 {
-      font-size: 1.5rem;
-      margin-top: 0;
-    }
-
-    .contact-list {
-      list-style: none;
-      padding: 0;
-      margin: 2rem 0;
-    }
-
-    .contact-list li {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      margin-bottom: 1.2rem;
-      color: #e5e7eb;
-      font-size: 0.95rem;
-    }
-
-    .contact-list li .icon {
-      color: var(--accent);
-    }
-
-    .response-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      margin-top: 0.5rem;
-      padding: 0.5rem 0.9rem;
-      border-radius: 999px;
-      background: rgba(34, 197, 94, 0.1);
-      border: 1px solid rgba(34, 197, 94, 0.4);
-      color: #86efac;
-      font-size: 0.8rem;
-    }
-
-    form {
-      display: grid;
-      gap: 1.2rem;
-    }
-
-    input, textarea {
-      width: 100%;
-      font-family: inherit;
-      font-size: 0.95rem;
-      padding: 0.8rem 1rem;
-      border-radius: 8px;
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      background: rgba(255, 255, 255, 0.03);
-      color: var(--text);
-      outline: none;
-      transition: all 0.3s ease;
-    }
-
-    input:focus, textarea:focus {
-      border-color: var(--accent);
-      background: rgba(255, 255, 255, 0.05);
-    }
-
-    textarea {
-      min-height: 150px;
-      resize: vertical;
-    }
-
-    .form-row-inline {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 1.2rem;
-    }
-
-    /* Footer */
-    footer {
-      border-top: 1px solid var(--border);
-      padding: 2rem 0;
-      font-size: 0.85rem;
-      color: var(--muted);
-      background: #050505;
-    }
-
-    .footer-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-
-    .footer-links {
-      display: flex;
-      gap: 1.5rem;
-    }
-
-    .footer-links a:hover {
-      color: var(--accent);
-    }
-
-    /* Floating WhatsApp */
-    .whatsapp-float {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      z-index: 50;
-      width: 60px;
-      height: 60px;
-      border-radius: 999px;
-      background: #25D366;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
-      transition: transform 0.3s ease;
-    }
-
-    .whatsapp-float:hover {
-      transform: translateY(-5px);
-    }
-
-    .whatsapp-float svg {
-      width: 32px;
-      height: 32px;
-      fill: #fff;
-    }
-
-    @media (max-width: 900px) {
-      .hero-grid, .about-grid, .highlight, .contact-grid {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-      }
-      .hero-visual { order: -1; }
-      .cards-grid, .testimonials-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .section-header { text-align: left; align-items: flex-start; }
-    }
-
-    @media (max-width: 720px) {
-      .nav-links {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: var(--card);
-        flex-direction: column;
-        padding: 1.5rem;
-        border-bottom: 1px solid var(--border);
-      }
-      .nav-links.open { display: flex; }
-      .nav-toggle { display: block; }
-      .nav-cta { display: none; }
-      .cards-grid, .testimonials-grid { grid-template-columns: 1fr; }
-      .form-row-inline { grid-template-columns: 1fr; }
-      .product-strip { grid-template-columns: repeat(2, 1fr); }
-      .client-featured-grid { grid-template-columns: repeat(2, 1fr); }
-    }
-  </style>
 </head>
+
 <body>
-  <div class="page">
 
-    <!-- NAV -->
-    <header class="nav">
-      <div class="container nav-inner">
-        <a href="#home" class="nav-brand">
-          <div class="brand-logo">V</div>
-          <div class="brand-text">
-            <span>Virendrra Randive</span>
-            <span>Advisor & Entrepreneur</span>
-          </div>
-        </a>
+    <!-- ===========================
+         HEADER
+    ============================ -->
 
-        <nav class="nav-links" id="navLinks">
-          <a href="#about">About</a>
-          <a href="#services">Expertise</a>
-          <a href="#work">Laxmi Jute House</a>
-          <a href="#testimonials">Clients</a>
-          <a href="#contact">Contact</a>
-        </nav>
+    <header class="header">
 
-        <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">
-          Start a Conversation
-        </button>
+        <div class="container">
 
-        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-          <svg class="icon" viewBox="0 0 24 24">
-            <path d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
-      </div>
+            <a href="#" class="logo">
+
+                <span>LAXMI</span>
+
+                <small>Jute House</small>
+
+            </a>
+
+            <nav>
+
+                <ul class="nav-menu">
+
+                    <li><a href="#home">Home</a></li>
+
+                    <li><a href="#solutions">Solutions</a></li>
+
+                    <li><a href="#clients">Clients</a></li>
+
+                    <li><a href="#about">About</a></li>
+
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+
+            </nav>
+
+            <a href="#contact" class="btn-primary">
+
+                Let's Talk
+
+            </a>
+
+        </div>
+
     </header>
 
-    <main>
-      <!-- HERO -->
-      <section class="hero" id="home">
+
+    <!-- ===========================
+         HERO
+    ============================ -->
+
+    <section class="hero" id="home">
+
         <div class="container hero-grid">
-          <div class="reveal">
-            <div class="eyebrow">
-              <span class="eyebrow-dot"></span>
-              Available for advisory & collaborations
+
+            <div class="hero-content">
+
+                <span class="hero-tag">
+
+                    Founder | Sustainable Procurement &
+                    Corporate Gifting Expert
+
+                </span>
+
+                <h1>
+
+                    Premium Corporate Gifting.
+                    <br>
+
+                    Sustainable Solutions.
+                    <br>
+
+                    Trusted Partnerships.
+
+                </h1>
+
+                <p>
+
+                    Laxmi Jute House partners with organizations to deliver
+                    premium corporate gifting, customized merchandise,
+                    sustainable procurement and branding solutions that
+                    strengthen relationships and create memorable experiences.
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#solutions" class="btn-primary">
+
+                        Explore Solutions
+
+                    </a>
+
+                    <a href="#contact" class="btn-secondary">
+
+                        Contact Us
+
+                    </a>
+
+                </div>
+
             </div>
 
-            <h1 class="hero-title">
-              I help businesses grow with <span class="highlight">clear strategy</span> & sustainable gifting.
-            </h1>
+            <div class="hero-image">
 
-            <p class="hero-subtitle">
-              I'm <strong>Virendrra Kumar Vardhaman Randive</strong>, an advisor and founder at <strong>Laxmi Jute House</strong>. I work with organisations that care about meaningful relationships, sustainable branding, and long-term value.
+                <img src="assets/images/founder.png"
+                    alt="Virendrra Randive">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ===========================
+         BUSINESS METRICS
+    ============================ -->
+
+    <section class="metrics">
+
+        <div class="container">
+
+            <div class="metric">
+
+                <h2>15+</h2>
+
+                <p>Years of Experience</p>
+
+            </div>
+
+            <div class="metric">
+
+                <h2>5000+</h2>
+
+                <p>Products Delivered</p>
+
+            </div>
+
+            <div class="metric">
+
+                <h2>100+</h2>
+
+                <p>Product Categories</p>
+
+            </div>
+
+            <div class="metric">
+
+                <h2>50+</h2>
+
+                <p>Corporate Clients</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ===========================
+         SOLUTIONS
+    ============================ -->
+
+    <section id="solutions">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>What We Do</span>
+
+                <h2>
+
+                    Corporate Gifting &
+                    Procurement Solutions
+
+                </h2>
+
+            </div>
+
+            <div class="solution-grid">
+
+                <article>
+
+                    <h3>Corporate Gifts</h3>
+
+                    <p>
+
+                        Customized gifts designed to strengthen business
+                        relationships and reinforce your brand.
+
+                    </p>
+
+                </article>
+
+                <article>
+
+                    <h3>Employee Joining Kits</h3>
+
+                    <p>
+
+                        Premium onboarding kits tailored to reflect your
+                        organization's culture and values.
+
+                    </p>
+
+                </article>
+
+                <article>
+
+                    <h3>Sustainable Merchandise</h3>
+
+                    <p>
+
+                        Eco-friendly products that combine functionality,
+                        quality, and environmental responsibility.
+
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ===========================
+         TEMPORARY FOOTER
+    ============================ -->
+
+    <footer>
+
+        <div class="container">
+
+            <h3>Laxmi Jute House</h3>
+
+            <p>
+
+                Premium Corporate Gifting • Sustainable Procurement •
+                Customized Business Solutions
+
             </p>
 
-            <div class="metrics">
-              <div class="metric">
-                <strong>10+ yrs</strong>
-                <span>Business & Advisory</span>
-              </div>
-              <div class="metric">
-                <strong>8+ yrs</strong>
-                <span>Laxmi Jute House</span>
-              </div>
-              <div class="metric">
-                <strong>Pan India</strong>
-                <span>Corporate Network</span>
-              </div>
-            </div>
+            <p>
 
-            <div class="hero-actions">
-              <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">
-                Book a discovery call
-                <svg class="icon" style="width:16px; height:16px" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </button>
-              <a href="resume.pdf" class="btn btn-outline" target="_blank">
-                View Profile
-              </a>
-            </div>
+                © 2026 Laxmi Jute House.
+                All Rights Reserved.
 
-            <div class="hero-note">
-              <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
-              <span>Happy to connect over WhatsApp or a quick video call.</span>
-            </div>
-          </div>
+            </p>
 
-          <div class="hero-visual reveal">
-            <div class="hero-card">
-              <div class="hero-avatar">V</div>
-              <h2>Advisor & Founder</h2>
-              <p>Blending strategic advisory with hands-on experience in sustainable, high-impact corporate gifting.</p>
-
-              <div class="hero-tags">
-                <span class="tag">Business Advisory</span>
-                <span class="tag">Corporate Gifting</span>
-                <span class="tag">Sustainability</span>
-              </div>
-
-              <div class="hero-floating-card">
-                <strong>Trusted by growing brands</strong>
-                <span>Helping teams move from generic gifts to thoughtful experiences.</span>
-                <div class="hero-floating-pill">
-                  <svg class="icon" style="width:14px; height:14px" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM11 19.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.22.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zM17.9 17.39c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
-                  Eco-friendly & Custom
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </section>
 
-      <!-- ABOUT -->
-      <section id="about">
-        <div class="container">
-          <div class="section-header reveal">
-            <div class="section-kicker">About</div>
-            <h2 class="section-title">Who I am beyond the title</h2>
-            <p class="section-description">A snapshot of my foundation, what I value, and how I approach business relationships.</p>
-          </div>
-
-          <div class="about-grid reveal">
-            <div class="about-text">
-              <p>
-                My journey began with a foundation in business management from IIPM Pune, leading to the establishment of Anita Distributors in 2013. Over the years, exploring distribution and corporate services naturally guided me towards creating value through sustainable corporate gifting.
-              </p>
-              <p>
-                In 2018, I formed a strategic partnership with <strong>Laxmi Jute House</strong>. Here, I focus on helping organisations pick gifts that align with their brand values, delight their teams, and reduce environmental waste. Every product is an opportunity to tell a refined story.
-              </p>
-              <p>
-                Alongside gifting strategy, I advise on <span class="muted">positioning, customer experience, and holistic growth</span> for founders and teams who want a long-term partner, not just a vendor.
-              </p>
-            </div>
-
-            <div>
-              <div class="about-list">
-                <div class="about-item">
-                  <span class="label">Current focus</span>
-                  <span class="value">Advisory & Sustainable Gifting</span>
-                </div>
-                <div class="about-item">
-                  <span class="label">Working with</span>
-                  <span class="value">Corporates, Institutes & Banks</span>
-                </div>
-                <div class="about-item">
-                  <span class="label">Location</span>
-                  <span class="value">Aurangabad (Serving Pan-India)</span>
-                </div>
-                <div class="about-item">
-                  <span class="label">Availability</span>
-                  <span class="value">Open for select retainers</span>
-                </div>
-              </div>
-
-              <div class="stack-tags" style="margin-top: 1.5rem;">
-                <span>Corporate Strategy</span>
-                <span>Vendor Curation</span>
-                <span>Experience Design</span>
-                <span>Brand Alignment</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- SERVICES -->
-      <section id="services">
-        <div class="container">
-          <div class="section-header reveal">
-            <div class="section-kicker">Expertise</div>
-            <h2 class="section-title">How I can help your organisation</h2>
-          </div>
-
-          <div class="cards-grid reveal">
-            <div class="card">
-              <div class="card-icon">
-                <svg class="icon" viewBox="0 0 24 24"><path d="M3 3v18h18M18 9l-5 5-3-3-5 5"/></svg>
-              </div>
-              <h3>Business Advisory</h3>
-              <p>A practical outside-in view on your business, with a focus on relationships, retention, and long-term value.</p>
-              <ul>
-                <li>Clarify messaging & positioning</li>
-                <li>Identify high-impact opportunities</li>
-                <li>Align gifting with business goals</li>
-              </ul>
-            </div>
-
-            <div class="card">
-              <div class="card-icon">
-                <svg class="icon" viewBox="0 0 24 24"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-11v6h2v-6h-2zm0-4v2h2V7h-2z"/></svg>
-              </div>
-              <h3>Sustainable Strategy</h3>
-              <p>Thoughtful, eco-friendly gifting plans for festivals, launches, internal events, and milestone moments.</p>
-              <ul>
-                <li>Premium theme conceptualisation</li>
-                <li>Sustainable product curation</li>
-                <li>End-to-end execution</li>
-              </ul>
-            </div>
-
-            <div class="card">
-              <div class="card-icon">
-                <svg class="icon" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 7a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-              </div>
-              <h3>Partnerships & CX</h3>
-              <p>Designing experiences that make clients, partners, and employees feel seen, valued, and remembered.</p>
-              <ul>
-                <li>Onboarding & welcome kits</li>
-                <li>Client touchpoint design</li>
-                <li>Internal culture & recognition</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- LAXMI JUTE HOUSE -->
-      <section id="work">
-        <div class="container">
-          <div class="section-header reveal">
-            <div class="section-kicker">Featured work</div>
-            <h2 class="section-title">Laxmi Jute House</h2>
-            <p class="section-description">Premium, sustainable corporate gifting designed to make a lasting impression.</p>
-          </div>
-
-          <div class="highlight reveal">
-            <div>
-              <h3>Helping brands gift better, not more.</h3>
-              <p>
-                We curate and manufacture <strong>jute bags, laptop sleeves, planters, journals, and lifestyle accessories</strong> that combine utility with premium aesthetics. The goal is simple: gifts people actually use, admire, and remember you for.
-              </p>
-
-              <div class="product-strip">
-                <div class="product-chip">
-                  <img src="images/jute-bag.jpg.jpg" alt="Custom branded jute tote bag" loading="lazy" />
-                  <span class="label">Jute Bags</span>
-                </div>
-                <div class="product-chip">
-                  <img src="images/laptop-bag.jpg.jpg" alt="Branded laptop bag" loading="lazy" />
-                  <span class="label">Tech Sleeves</span>
-                </div>
-                <div class="product-chip">
-                  <img src="images/jute-planter.jpg.jpg" alt="Eco-friendly jute planter" loading="lazy" />
-                  <span class="label">Planters</span>
-                </div>
-                <div class="product-chip">
-                  <img src="images/diary-set.jpg.jpg" alt="Premium diary and pen gift set" loading="lazy" />
-                  <span class="label">Executive Sets</span>
-                </div>
-              </div>
-
-              <div class="hero-actions" style="margin-top: 2rem;">
-                <a href="https://drive.google.com/file/d/14mnN8NjHBVFeUxlRuzb4V58Jf6Xa5y-9/view?usp=sharing" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
-                  View complete catalog
-                  <svg class="icon" style="width:16px; height:16px" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </a>
-              </div>
-            </div>
-
-            <aside class="highlight-card">
-              <div class="highlight-card-header">
-                <h4 class="highlight-card-title">Gifting Frameworks</h4>
-                <p style="color:var(--muted); font-size: 0.85rem; margin:0;">Tailored for scale and impact</p>
-              </div>
-
-              <ul class="highlight-card-list">
-                <li>
-                  <span class="label">Festivals & Milestones</span>
-                  Diwali, New Year, and major corporate milestones.
-                </li>
-                <li>
-                  <span class="label">Employee Experience</span>
-                  Premium onboarding kits and performance recognition.
-                </li>
-                <li>
-                  <span class="label">Client Retention</span>
-                  High-end appreciation boxes and event takeaways.
-                </li>
-              </ul>
-            </aside>
-          </div>
-
-          <div class="client-groups-wrap reveal">
-            <span class="label" style="color: var(--accent); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600;">Featured Partners</span>
-            <div class="client-featured-grid">
-              <div class="client-featured-chip">JRS Pharma</div>
-              <div class="client-featured-chip">NISSO Chemical India LLP</div>
-              <div class="client-featured-chip">Kalyani Technoforge</div>
-              <div class="client-featured-chip">Wipro</div>
-              <div class="client-featured-chip">State Bank of India</div>
-              <div class="client-featured-chip">Endress+Hauser</div>
-            </div>
-
-            <div class="client-groups-grid">
-              <div class="client-group">
-                <div class="client-group-title">Engineering & Manufacturing</div>
-                <ul class="clients-list">
-                  <li>Marathwada Auto Cluster</li>
-                  <li>MAN Diesel</li>
-                  <li>Endurance Technologies Ltd.</li>
-                  <li>Sanjeev Auto</li>
-                  <li>Metalman</li>
-                  <li>Speciality Films</li>
-                  <li>Aurangabad Electricals</li>
-                  <li>R.L. Steel</li>
-                  <li>Varroc Engineering</li>
-                  <li>Cogeme Precision Pvt. Ltd.</li>
-                  <li>Greaves Cotton Ltd.</li>
-                </ul>
-              </div>
-
-              <div class="client-group">
-                <div class="client-group-title">Pharma & Chemical</div>
-                <ul class="clients-list">
-                  <li>JRS Pharma</li>
-                  <li>NISSO Chemical India LLP</li>
-                  <li>Wockhardt</li>
-                </ul>
-              </div>
-
-              <div class="client-group">
-                <div class="client-group-title">Technology & Process Automation</div>
-                <ul class="clients-list">
-                  <li>Endress+Hauser (including Flowtech)</li>
-                  <li>Wipro</li>
-                  <li>Kalyani Technoforge</li>
-                  <li>Canpack</li>
-                </ul>
-              </div>
-
-              <div class="client-group">
-                <div class="client-group-title">Banking & Institutes</div>
-                <ul class="clients-list">
-                  <li>State Bank of India</li>
-                  <li>Deogiri Bank</li>
-                  <li>Deogiri College</li>
-                  <li>Hindustan Petroleum</li>
-                  <li>ICAI, Chhatrapati Sambhajinagar</li>
-                </ul>
-              </div>
-
-              <div class="clients-note">
-                …and many more corporates, institutes, event managers and retail customers across India.
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- TESTIMONIALS -->
-      <section id="testimonials">
-        <div class="container">
-          <div class="section-header reveal">
-            <div class="section-kicker">Client Relations</div>
-            <h2 class="section-title">Words of Trust</h2>
-          </div>
-
-          <div class="testimonials-grid reveal">
-            <div class="testimonial">
-              <div class="testimonial-quote">
-                "Virendrra understood our brand and culture quickly. The festive hampers felt premium, thoughtful and were delivered seamlessly without any need for follow-ups."
-              </div>
-              <div class="testimonial-footer">
-                <div>
-                  <div class="testimonial-name">R. K.</div>
-                  <div class="testimonial-role">HR Head, Manufacturing MNC</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="testimonial">
-              <div class="testimonial-quote">
-                "What I appreciate most is his calm, advisory approach. He helped us plan gifts that fit our budgets but still created a very strong impression with our top clients."
-              </div>
-              <div class="testimonial-footer">
-                <div>
-                  <div class="testimonial-name">S. P.</div>
-                  <div class="testimonial-role">Founder, Events Agency</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="testimonial">
-              <div class="testimonial-quote">
-                "We've partnered with Virendrra for multiple occasions now. Consistent quality, strictly reliable timelines, and a genuine, unwavering focus on sustainability."
-              </div>
-              <div class="testimonial-footer">
-                <div>
-                  <div class="testimonial-name">A. D.</div>
-                  <div class="testimonial-role">Senior Manager, BFSI Sector</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- CONTACT -->
-      <section id="contact">
-        <div class="container">
-          <div class="section-header reveal">
-            <div class="section-kicker">Contact</div>
-            <h2 class="section-title">Let's build something valuable</h2>
-          </div>
-
-          <div class="contact-grid reveal">
-            <div class="contact-card">
-              <h3>Direct Access</h3>
-              <p style="color: var(--muted); margin-bottom: 2rem;">
-                Whether you need a quick consultation or a complete corporate gifting overhaul, I am available to discuss your vision.
-              </p>
-
-              <ul class="contact-list">
-                <li>
-                  <svg class="icon" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                  <span>Aurangabad, Maharashtra, India</span>
-                </li>
-                <li>
-                  <svg class="icon" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                  <a href="mailto:virendra.randive1121@gmail.com">virendra.randive1121@gmail.com</a>
-                </li>
-                <li>
-                  <svg class="icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                  <a href="tel:+919823394592">+91 98233 94592</a>
-                </li>
-                <li>
-                  <svg class="icon" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
-                  <a href="https://wa.me/919823394592" target="_blank" rel="noopener noreferrer">WhatsApp (click to chat)</a>
-                </li>
-              </ul>
-
-              <div class="response-badge">
-                <span>⚡</span>
-                <span>Typically responds within 24 hours</span>
-              </div>
-            </div>
-
-            <div>
-              <form id="contact-form" action="https://formspree.io/f/mvgdbewb" method="POST">
-                <div class="form-row-inline">
-                  <input type="text" name="name" placeholder="Full Name" required />
-                  <input type="text" name="company" placeholder="Organisation" />
-                </div>
-                <div class="form-row-inline">
-                  <input type="email" name="_replyto" placeholder="Email Address" required />
-                  <input type="text" name="budget" placeholder="Estimated Budget (Optional)" />
-                </div>
-                <textarea name="message" placeholder="Tell me about your event, festival, or advisory requirement..." required></textarea>
-
-                <input type="hidden" name="subject" value="New enquiry from Virendrra Randive Portfolio" />
-                <input type="text" name="_gotcha" style="display:none" />
-
-                <button type="submit" class="btn btn-primary" style="justify-self: start;">
-                  Send Message
-                </button>
-                <div id="form-status" style="font-size: 0.85rem; margin-top: 0.5rem; color: var(--accent);"></div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- FOOTER -->
-    <footer>
-      <div class="container footer-inner">
-        <span>© <span id="year"></span> Virendrra Randive. All rights reserved.</span>
-        <div class="footer-links">
-          <a href="#home">Top</a>
-          <a href="#" onclick="alert('Add LinkedIn URL here')">LinkedIn</a>
-        </div>
-      </div>
     </footer>
 
-    <!-- Floating WhatsApp button -->
-    <a class="whatsapp-float" href="https://wa.me/919823394592?text=Hi%20Virendrra%2C%20I%27d%20like%20to%20discuss%20a%20requirement." target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
-      <svg viewBox="0 0 24 24">
-        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-      </svg>
-    </a>
-  </div>
-
-  <script>
-    // Navigation Toggle
-    const navToggle = document.getElementById("navToggle");
-    const navLinks = document.getElementById("navLinks");
-    if (navToggle && navLinks) {
-      navToggle.addEventListener("click", () => navLinks.classList.toggle("open"));
-      navLinks.querySelectorAll("a").forEach(link => {
-        link.addEventListener("click", () => navLinks.classList.remove("open"));
-      });
-    }
-
-    // Smooth Scroll
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener("click", function (e) {
-        const target = document.getElementById(this.getAttribute("href").substring(1));
-        if (target) {
-          e.preventDefault();
-          target.scrollIntoView({ behavior: "smooth" });
-        }
-      });
-    });
-
-    // Dynamic Year
-    const yearEl = document.getElementById("year");
-    if (yearEl) yearEl.textContent = new Date().getFullYear();
-
-    // Scroll Reveal Animations
-    const revealElements = document.querySelectorAll('.reveal');
-    const revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('active');
-          revealObserver.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.05 });
-    revealElements.forEach(el => revealObserver.observe(el));
-
-    // Safety net: if the reveal animation doesn't trigger for any reason
-    // (slow devices, blocked observers, etc.), force everything visible
-    // after a short delay so the page never appears blank.
-    setTimeout(() => {
-      document.querySelectorAll('.reveal:not(.active)').forEach(el => el.classList.add('active'));
-    }, 1200);
-
-    // Formspree Handling
-    const form = document.getElementById("contact-form");
-    const statusEl = document.getElementById("form-status");
-    if (form && statusEl) {
-      form.addEventListener("submit", async function (event) {
-        event.preventDefault();
-        statusEl.textContent = "Sending message...";
-        const data = new FormData(form);
-        try {
-          const response = await fetch(form.action, {
-            method: form.method,
-            body: data,
-            headers: { Accept: "application/json" }
-          });
-          if (response.ok) {
-            form.reset();
-            statusEl.textContent = "Thank you! I will get back to you shortly.";
-          } else {
-            statusEl.textContent = "Something went wrong. Please reach out via email.";
-          }
-        } catch (error) {
-          statusEl.textContent = "Network error. Please try again or use WhatsApp.";
-        }
-      });
-    }
-  </script>
 </body>
+
 </html>
+<!-- ========================================= -->
+<!-- TRUSTED CLIENTS -->
+<!-- ========================================= -->
+
+<section id="clients" class="clients">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>Trusted By</span>
+
+            <h2>Organizations That Trust Our Work</h2>
+
+            <p>
+                We have partnered with organizations across industries to
+                deliver customized corporate gifting and procurement
+                solutions with quality, consistency, and reliability.
+            </p>
+
+        </div>
+
+        <div class="client-grid">
+
+            <div class="client-card">
+
+                <h3>JRS Pharma</h3>
+
+                <ul>
+
+                    <li>1000+ Customized Laptop Bags</li>
+
+                    <li>800+ Premium Copper Bottles</li>
+
+                    <li>200+ Electric Lunch Boxes</li>
+
+                    <li>200+ Silver Coins</li>
+
+                </ul>
+
+            </div>
+
+            <div class="client-card">
+
+                <h3>ICAI</h3>
+
+                <p>
+
+                    Successfully supplying more than
+                    <strong>400 customized conference bags every year</strong>
+                    for ICAI events.
+
+                </p>
+
+            </div>
+
+            <div class="client-card">
+
+                <h3>Kalyani Technoforge</h3>
+
+                <ul>
+
+                    <li>400+ Premium Duffel Bags</li>
+
+                    <li>200+ Eco-friendly Jute Planters</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- ABOUT -->
+<!-- ========================================= -->
+
+<section id="about" class="about">
+
+    <div class="container about-grid">
+
+        <div class="about-content">
+
+            <span class="section-tag">
+
+                About Laxmi Jute House
+
+            </span>
+
+            <h2>
+
+                Your Trusted Corporate Gifting &
+                Sustainable Procurement Partner
+
+            </h2>
+
+            <p>
+
+                Laxmi Jute House specializes in premium corporate gifting,
+                customized merchandise, eco-friendly products, and
+                procurement solutions for organizations across India.
+                Every project is designed to strengthen business
+                relationships and elevate brand identity.
+
+            </p>
+
+            <p>
+
+                From employee onboarding kits and conference merchandise
+                to executive gifting and promotional campaigns, we manage
+                everything from sourcing and customization to quality
+                assurance and nationwide delivery.
+
+            </p>
+
+        </div>
+
+        <div class="about-image">
+
+            <img src="assets/images/about.jpg"
+                 alt="Corporate Gifting">
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- WHY CHOOSE US -->
+<!-- ========================================= -->
+
+<section class="why-us">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>Why Choose Us</span>
+
+            <h2>
+
+                Delivering More Than Products
+
+            </h2>
+
+        </div>
+
+        <div class="why-grid">
+
+            <div class="why-card">
+
+                <h3>Premium Quality</h3>
+
+                <p>
+
+                    Carefully selected products that meet
+                    corporate quality expectations.
+
+                </p>
+
+            </div>
+
+            <div class="why-card">
+
+                <h3>Customization</h3>
+
+                <p>
+
+                    Branding solutions tailored to your
+                    company's identity.
+
+                </p>
+
+            </div>
+
+            <div class="why-card">
+
+                <h3>Sustainable Options</h3>
+
+                <p>
+
+                    Eco-friendly gifting solutions for
+                    responsible organizations.
+
+                </p>
+
+            </div>
+
+            <div class="why-card">
+
+                <h3>Pan India Delivery</h3>
+
+                <p>
+
+                    Reliable logistics for corporate
+                    deliveries across India.
+
+                </p>
+
+            </div>
+
+            <div class="why-card">
+
+                <h3>Dedicated Support</h3>
+
+                <p>
+
+                    One point of contact from enquiry
+                    to delivery.
+
+                </p>
+
+            </div>
+
+            <div class="why-card">
+
+                <h3>End-to-End Procurement</h3>
+
+                <p>
+
+                    Product sourcing, branding,
+                    packaging and delivery under
+                    one roof.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- CONTACT -->
+<!-- ========================================= -->
+
+<section id="contact" class="contact">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>Let's Connect</span>
+
+            <h2>
+
+                Let's Build Something Meaningful Together
+
+            </h2>
+
+        </div>
+
+        <div class="contact-box">
+
+            <p>
+
+                Whether you're planning employee gifting,
+                conferences, dealer meets, festive campaigns,
+                or promotional merchandise, we'd love to
+                discuss your requirements.
+
+            </p>
+
+            <a href="mailto:info@laxmijutehouse.com"
+               class="btn-primary">
+
+                Contact Us
+
+            </a>
+
+        </div>
+
+    </div>
+<!-- ========================================= -->
+<!-- INDUSTRIES WE SERVE -->
+<!-- ========================================= -->
+
+<section id="industries" class="industries">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>Industries We Serve</span>
+
+            <h2>
+                Trusted Across Diverse Industries
+            </h2>
+
+            <p>
+                Our customized gifting and procurement solutions are designed
+                to meet the unique branding and engagement needs of businesses
+                across multiple sectors.
+            </p>
+
+        </div>
+
+        <div class="industry-grid">
+
+            <div class="industry-card">
+                <h3>Pharmaceuticals</h3>
+            </div>
+
+            <div class="industry-card">
+                <h3>Manufacturing</h3>
+            </div>
+
+            <div class="industry-card">
+                <h3>Automobile</h3>
+            </div>
+
+            <div class="industry-card">
+                <h3>Engineering</h3>
+            </div>
+
+            <div class="industry-card">
+                <h3>IT & Technology</h3>
+            </div>
+
+            <div class="industry-card">
+                <h3>Education</h3>
+            </div>
+
+            <div class="industry-card">
+                <h3>Healthcare</h3>
+            </div>
+
+            <div class="industry-card">
+                <h3>Banking & Finance</h3>
+            </div>
+
+            <div class="industry-card">
+                <h3>Hospitality</h3>
+            </div>
+
+            <div class="industry-card">
+                <h3>Government</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- FEATURED PRODUCT CATEGORIES -->
+<!-- ========================================= -->
+
+<section id="products" class="products">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>Product Collections</span>
+
+            <h2>
+                Premium Corporate Product Categories
+            </h2>
+
+        </div>
+
+        <div class="product-grid">
+
+            <article class="product-card">
+
+                <img src="assets/products/bags.jpg"
+                     alt="Corporate Bags">
+
+                <h3>Executive Bags</h3>
+
+            </article>
+
+            <article class="product-card">
+
+                <img src="assets/products/drinkware.jpg"
+                     alt="Drinkware">
+
+                <h3>Drinkware</h3>
+
+            </article>
+
+            <article class="product-card">
+
+                <img src="assets/products/apparel.jpg"
+                     alt="Corporate Apparel">
+
+                <h3>Corporate Apparel</h3>
+
+            </article>
+
+            <article class="product-card">
+
+                <img src="assets/products/electronics.jpg"
+                     alt="Technology Gifts">
+
+                <h3>Technology Gifts</h3>
+
+            </article>
+
+            <article class="product-card">
+
+                <img src="assets/products/awards.jpg"
+                     alt="Awards">
+
+                <h3>Awards & Recognition</h3>
+
+            </article>
+
+            <article class="product-card">
+
+                <img src="assets/products/eco.jpg"
+                     alt="Eco Products">
+
+                <h3>Eco-Friendly Collection</h3>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- OUR PROCESS -->
+<!-- ========================================= -->
+
+<section class="process">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>How We Work</span>
+
+            <h2>
+                A Simple & Transparent Process
+            </h2>
+
+        </div>
+
+        <div class="process-grid">
+
+            <div class="process-step">
+
+                <span>01</span>
+
+                <h3>Requirement Discussion</h3>
+
+            </div>
+
+            <div class="process-step">
+
+                <span>02</span>
+
+                <h3>Product Selection</h3>
+
+            </div>
+
+            <div class="process-step">
+
+                <span>03</span>
+
+                <h3>Customization</h3>
+
+            </div>
+
+            <div class="process-step">
+
+                <span>04</span>
+
+                <h3>Quality Assurance</h3>
+
+            </div>
+
+            <div class="process-step">
+
+                <span>05</span>
+
+                <h3>Packaging</h3>
+
+            </div>
+
+            <div class="process-step">
+
+                <span>06</span>
+
+                <h3>Pan India Delivery</h3>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- FOUNDER -->
+<!-- ========================================= -->
+
+<section class="founder">
+
+    <div class="container founder-grid">
+
+        <div class="founder-image">
+
+            <img src="assets/images/virendrra-randive.jpg"
+                 alt="Virendrra Randive">
+
+        </div>
+
+        <div class="founder-content">
+
+            <span>Meet the Founder</span>
+
+            <h2>
+                Virendrra Randive
+            </h2>
+
+            <h4>
+                Founder | Sustainable Procurement &
+                Corporate Gifting Expert
+            </h4>
+
+            <p>
+
+                Corporate gifting is more than delivering products.
+                It is about creating experiences, strengthening
+                relationships, and building long-term trust.
+
+            </p>
+
+            <p>
+
+                Every project undertaken by Laxmi Jute House reflects
+                our commitment to quality, sustainability, innovation,
+                and customer satisfaction.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ========================================= -->
+<!-- CALL TO ACTION -->
+<!-- ========================================= -->
+
+<section class="cta">
+
+    <div class="container">
+
+        <div class="cta-box">
+
+            <span>Ready to Elevate Your Brand?</span>
+
+            <h2>
+
+                Let's Create Corporate Gifting
+                Experiences That People Remember.
+
+            </h2>
+
+            <p>
+
+                Whether you're planning employee onboarding,
+                conferences, dealer meets, festive gifting,
+                or executive merchandise, we'll help you
+                deliver an experience your recipients will value.
+
+            </p>
+
+            <div class="cta-buttons">
+
+                <a href="#contact" class="btn-primary">
+
+                    Discuss Your Requirement
+
+                </a>
+
+                <a href="#products" class="btn-secondary">
+
+                    Explore Products
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================= -->
+<!-- FOOTER -->
+<!-- ========================================= -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-column">
+
+                <h3>
+
+                    Laxmi Jute House
+
+                </h3>
+
+                <p>
+
+                    Premium Corporate Gifting,
+                    Sustainable Procurement &
+                    Customized Business Solutions.
+
+                </p>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h4>
+
+                    Quick Links
+
+                </h4>
+
+                <ul>
+
+                    <li><a href="#home">Home</a></li>
+
+                    <li><a href="#solutions">Solutions</a></li>
+
+                    <li><a href="#clients">Clients</a></li>
+
+                    <li><a href="#products">Products</a></li>
+
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h4>
+
+                    Solutions
+
+                </h4>
+
+                <ul>
+
+                    <li>Corporate Gifting</li>
+
+                    <li>Employee Kits</li>
+
+                    <li>Customized Merchandise</li>
+
+                    <li>Eco Friendly Products</li>
+
+                    <li>Corporate Procurement</li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h4>
+
+                    Contact
+
+                </h4>
+
+                <p>
+
+                    Chhatrapati Sambhajinagar,
+                    Maharashtra
+
+                </p>
+
+                <p>
+
+                    Email:
+                    info@laxmijutehouse.com
+
+                </p>
+
+                <p>
+
+                    Phone:
+                    +91 XXXXX XXXXX
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 Laxmi Jute House.
+                All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="js/app.js"></script>
+
+</body>
+
+</html>
+
+
+</section>
